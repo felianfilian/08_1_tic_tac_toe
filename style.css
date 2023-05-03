@@ -9,10 +9,17 @@ tr {
 }
 
 td {
+  position: relative;
+
   width: 133px;
   height: 133px;
 
   border: 5px solid #000;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: rgba(25, 221, 0, 0.2);
 }
 
 table tr:first-child td {
@@ -32,3 +39,16 @@ table tr td:last-child {
 }
 
 /* Images */
+
+.shape {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+
+  width: 80px;
+  height: 80px;
+}
+
+.d-none {
+  display: none;
+}
