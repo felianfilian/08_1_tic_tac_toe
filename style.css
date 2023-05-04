@@ -89,3 +89,8 @@ table tr td:last-child {
 .d-none {
   display: none;
 }
+
+/* Game Over */
+
+.game-over {
+}
