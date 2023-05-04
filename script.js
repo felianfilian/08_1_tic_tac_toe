@@ -3,16 +3,17 @@ let fields = [];
 let currentShape = "cross";
 
 function fillShape(id) {
-  if (currentShape == "cross") {
-    currentShape = "circle";
-  } else {
-    currentShape = "cross";
-  }
-  fields[id] = currentShape;
+  if (!fields[id]) {
+    if (currentShape == "cross") {
+      currentShape = "circle";
+    } else {
+      currentShape = "cross";
+    }
+    fields[id] = currentShape;
 
-  console.log(fields);
-  draw();
-  checkForWin();
+    draw();
+    checkForWin();
+  }
 }
 
 function draw() {
