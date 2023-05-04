@@ -59,6 +59,9 @@ function checkForWin() {
 
   if (winner) {
     console.log("WINNER: " + winner);
+    setTimeout(function () {
+      document.getElementById("game-over").classList.remove("d-none");
+    }, 1000);
     gameOver = true;
   }
 }
