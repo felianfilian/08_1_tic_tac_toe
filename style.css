@@ -11,6 +11,18 @@ body {
   margin: 0;
 }
 
+/* Player Panel */
+
+.player-panel {
+  display: flex;
+
+  font-size: 32px;
+}
+
+.player-panel div {
+  display: flex;
+}
+
 /* Game Board */
 
 table {
