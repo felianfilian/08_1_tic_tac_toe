@@ -58,11 +58,13 @@ function checkForWin() {
   }
   if (fields[0] == fields[4] && fields[4] == fields[8] && fields[0]) {
     winner = fields[0];
-    document.getElementById("line-6").style.transform = "scaleX(1.2)";
+    document.getElementById("line-6").style.transform =
+      "rotate(-45deg) scaleX(1.2)";
   }
-  if (fields[2] == fields[4] && fields[4] == fields[6] && fields[3]) {
+  if (fields[2] == fields[4] && fields[4] == fields[6] && fields[2]) {
     winner = fields[2];
-    document.getElementById("line-7").style.transform = "scaleX(1.2)";
+    document.getElementById("line-7").style.transform =
+      "rotate(45deg) scaleX(1.2)";
   }
 
   if (winner) {
