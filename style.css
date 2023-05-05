@@ -43,12 +43,12 @@ body {
 
 .h-line {
   position: absolute;
-  right: 30px;
-  left: 30px;
+  right: 60px;
+  left: 60px;
 
   height: 10px;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(22, 204, 46);
 
   transform: scaleX(0);
   transition: transform 225ms ease-in-out;
@@ -56,12 +56,12 @@ body {
 
 .v-line {
   position: absolute;
-  top: 30px;
-  bottom: 30px;
+  top: 60px;
+  bottom: 60px;
 
   width: 10px;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(22, 204, 46);
 
   transform: scaleY(0);
   transition: transform 225ms ease-in-out;
