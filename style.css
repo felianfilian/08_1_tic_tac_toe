@@ -35,6 +35,42 @@ body {
   margin-right: 10px;
 }
 
+.game-board {
+  position: relative;
+}
+
+/* win lines */
+
+.h-line {
+  position: absolute;
+  right: 30px;
+  left: 30px;
+
+  height: 10px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transform: scaleX(0);
+  transition: transform 225ms ease-in-out;
+}
+
+.v-line {
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+
+  width: 10px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transform: scaleY(0);
+  transition: transform 225ms ease-in-out;
+}
+
+.make-vertical {
+  transform: rotate(90deg);
+}
+
 /* Game Board */
 
 table {
