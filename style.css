@@ -158,3 +158,10 @@ table tr td:last-child {
     transform: scale(1);
   }
 }
+
+.restart-btn {
+  width: 300px;
+  height: 100px;
+
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
