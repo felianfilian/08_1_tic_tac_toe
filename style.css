@@ -39,6 +39,10 @@ body {
   position: relative;
 }
 
+.player-inactive {
+  opacity: 0.3;
+}
+
 /* win lines */
 
 .h-line {
@@ -129,11 +133,18 @@ table tr td:last-child {
 /* Game Over */
 
 .game-over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
+
   z-index: 10;
+}
+
+#game-over-img {
+  height: 90vh;
+
   animation: zoomIn 225ms ease-in-out;
 }
 
