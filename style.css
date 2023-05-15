@@ -134,6 +134,7 @@ table tr td:last-child {
 
 .game-over {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -143,7 +144,7 @@ table tr td:last-child {
 }
 
 #game-over-img {
-  height: 90vh;
+  width: 70vw;
 
   animation: zoomIn 225ms ease-in-out;
 }
@@ -159,9 +160,35 @@ table tr td:last-child {
   }
 }
 
-.restart-btn {
-  width: 300px;
-  height: 100px;
+.btn-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 240px;
+  height: 80px;
+
+  margin: 10px 0;
+
+  background-color: #3a23ba;
+  border: 2px solid #000;
+  border-radius: 16px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
+  text-decoration: none;
+
+  z-index: 2;
 }
+
+.btn-01:hover {
+  background-color: rgb(88, 65, 213);
+}
+
+/* TITLE SCREEN */
+
+.txt-title {
+  font-size: 48px;
+}
+
+/* TITEL SCREEN END */
