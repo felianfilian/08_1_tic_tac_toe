@@ -127,7 +127,7 @@ table tr td:last-child {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 /* Game Over */
@@ -147,6 +147,11 @@ table tr td:last-child {
   width: 70vw;
 
   animation: zoomIn 225ms ease-in-out;
+}
+
+.gameover-bar {
+  display: flex;
+  gap: 40px;
 }
 
 @keyframes zoomIn {

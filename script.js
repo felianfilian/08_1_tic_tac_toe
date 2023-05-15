@@ -80,6 +80,7 @@ function checkForWin() {
     setTimeout(function () {
       document.getElementById("game-over-img").classList.remove("d-none");
       document.getElementById("restart-btn").classList.remove("d-none");
+      document.getElementById("main-menu-btn").classList.remove("d-none");
     }, 1300);
     gameOver = true;
   }
@@ -90,6 +91,7 @@ function restart() {
   fields = [];
   document.getElementById("game-over-img").classList.add("d-none");
   document.getElementById("restart-btn").classList.add("d-none");
+  document.getElementById("main-menu-btn").classList.add("d-none");
 
   // reset lines
   for (let i = 0; i < 6; i++) {
